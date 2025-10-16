@@ -1,6 +1,7 @@
 *** Settings ***
 Library    SeleniumLibrary
 Library    Collections
+Library    ./ChromeOptionsHelper.py
 
 *** Variables ***
 ${HAMK_URL}                https://www.hamk.fi
@@ -14,10 +15,24 @@ Open HAMK Website
     [Arguments]    ${language}=fi
     [Documentation]    Opens the HAMK website in the specified language
     ${url}=    Set Variable If    '${language}' == 'en'    ${HAMK_URL_EN}    ${HAMK_URL}
-    Open Browser    ${url}    ${BROWSER}
+    
+    # Handle headless chrome with proper options
+    Run Keyword If    '${BROWSER}' == 'headlesschrome'
+    ...    Open Browser With Headless Chrome    ${url}
+    ...    ELSE
+    ...    Open Browser    ${url}    ${BROWSER}
+    
     Maximize Browser Window
     Set Selenium Timeout    ${TIMEOUT}
     Set Selenium Implicit Wait    ${IMPLICIT_WAIT}
+
+Open Browser With Headless Chrome
+    [Arguments]    ${url}
+    [Documentation]    Opens Chrome in headless mode with proper configuration
+    ${chrome_options}=    Get Headless Chrome Options
+    ${chrome_service}=    Get Chrome Service
+    Create Webdriver    Chrome    options=${chrome_options}    service=${chrome_service}
+    Go To    ${url}
 
 Close HAMK Website
     [Documentation]    Closes the browser

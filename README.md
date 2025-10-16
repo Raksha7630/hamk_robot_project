@@ -21,7 +21,8 @@ hamk_robot_project/
 - Python 3.8 or higher
 - pip (Python package manager)
 - Google Chrome browser (or Firefox/Edge)
-- ChromeDriver (automatically managed by webdriver-manager)
+- ChromeDriver (automatically managed by Selenium Manager or webdriver-manager)
+- **Internet access** to the HAMK website (https://www.hamk.fi)
 
 ## Installation
 
@@ -167,6 +168,12 @@ Tests are primarily designed for Chrome but can run on:
 - Safari (with appropriate WebDriver)
 
 ## Troubleshooting
+
+### Internet Connectivity
+The test suite requires internet access to reach the HAMK website (https://www.hamk.fi). If you're running tests in a restricted environment:
+- Ensure your network allows access to hamk.fi
+- Check firewall settings
+- Verify DNS resolution is working
 
 ### ChromeDriver issues:
 The project uses `webdriver-manager` to automatically manage ChromeDriver. If you encounter issues:
