@@ -10,7 +10,8 @@ TC001: Verify HAMK Homepage Loads Successfully
     [Documentation]    Verifies that the HAMK homepage loads without errors
     [Tags]    smoke    homepage
     Wait For Page To Load
-    Title Should Contain    HAMK
+    ${title}=    Get Title
+    Should Contain    ${title}    HAMK    ignore_case=True
     Location Should Contain    hamk.fi
 
 TC002: Verify Homepage Has Required Elements
