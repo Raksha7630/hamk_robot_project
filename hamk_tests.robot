@@ -11,6 +11,10 @@ TC_UI_01 Latest News Section Verification
     [Documentation]    Verify that the Latest News section is present on the Hamk homepage.
     Open Browser    ${URL}    Chrome
     Sleep    3s  #wait for elements to load
+    Maximize Browser Window
+    Page Should Contain    Only allow essential cookies
+    Click element    xpath=//button[text()='Only allow essential cookies']
+    Sleep    3s  #wait for elements to load
 
     # Verify page should contain Latest News section
     Page Should Contain Element    xpath=//section[@id='latest-news']

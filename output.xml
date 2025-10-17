@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-10-17T11:49:12.755681" rpa="false" schemaversion="5">
+<suite id="s1" name="Hamk Tests" source="R:\Hamk Robot Testing\hamk_robot_project\hamk_tests.robot">
+<test id="s1-t1" name="TC_UI_01 Latest News Section Verification" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-17T11:49:13.014687" level="INFO">Opening browser 'Chrome' to base url 'https://www.hamk.fi/en/'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-17T11:49:13.014431" elapsed="7.461561"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-17T11:49:23.478478" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-17T11:49:20.477059" elapsed="3.001923"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-10-17T11:49:23.691525" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-17T11:49:23.692059" level="FAIL">Page should have contained element 'xpath=//section[@id='latest-news']' but did not.</msg>
+<arg>xpath=//section[@id='latest-news']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="FAIL" start="2025-10-17T11:49:23.480313" elapsed="0.220507">Page should have contained element 'xpath=//section[@id='latest-news']' but did not.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.701533" elapsed="0.000077"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//section[@id='latest-news']//a[contains(text(),'Info')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.701933" elapsed="0.000047"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.702255" elapsed="0.000052"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//section[@id='latest-news']//div[contains(@class,'info-tab')]//a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.702640" elapsed="0.000030"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.702809" elapsed="0.000031"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Info</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.702996" elapsed="0.000032"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.703539" elapsed="0.000037"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.703955" elapsed="0.000083"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//section[@id='latest-news']//a[contains(text(),'News')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.704668" elapsed="0.000032"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.704976" elapsed="0.000090"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//section[@id='latest-news']//div[contains(@class,'news-tab')]//a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.705537" elapsed="0.000082"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.705993" elapsed="0.000086"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>News</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.706558" elapsed="0.000091"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.707159" elapsed="0.000086"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.707876" elapsed="0.000101"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//section[@id='latest-news']//a[contains(text(),'Press Releases')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.708406" elapsed="0.000091"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.708948" elapsed="0.000059"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//section[@id='latest-news']//div[contains(@class,'press-releases-tab')]//a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.709287" elapsed="0.000062"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.709615" elapsed="0.000045"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Press Releases</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.709905" elapsed="0.000043"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.710191" elapsed="0.000044"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.710466" elapsed="0.000067"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//section[@id='latest-news']//a[contains(text(),'Stories')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.711118" elapsed="0.000034"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.711425" elapsed="0.000042"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//section[@id='latest-news']//div[contains(@class,'stories-tab')]//a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.711635" elapsed="0.000028"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.711805" elapsed="0.000025"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Stories</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.711968" elapsed="0.000034"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.712141" elapsed="0.000031"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.712654" elapsed="0.000072"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//section[@id='latest-news']//a[contains(text(),'Student Voice')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.713379" elapsed="0.000041"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.713945" elapsed="0.000043"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//section[@id='latest-news']//div[contains(@class,'student-voice-tab')]//a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.714164" elapsed="0.000044"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.714355" elapsed="0.000022"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Student Voice</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.714501" elapsed="0.000022"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.714641" elapsed="0.000020"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.714770" elapsed="0.000020"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-10-17T11:49:23.714905" elapsed="0.000021"/>
+</kw>
+<doc>Verify that the Latest News section is present on the Hamk homepage.</doc>
+<status status="FAIL" start="2025-10-17T11:49:13.013248" elapsed="10.701892">Page should have contained element 'xpath=//section[@id='latest-news']' but did not.</status>
+</test>
+<status status="FAIL" start="2025-10-17T11:49:12.757071" elapsed="10.959141"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Hamk Tests" id="s1" pass="0" fail="1" skip="0">Hamk Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
